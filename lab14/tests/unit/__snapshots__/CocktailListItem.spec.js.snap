@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CocktailListItem.vue matches the snapshot 1`] = `
+<router-link-stub to="[object Object]" class="cocktail"><img src="https://test-cocktail-image.jpg" class="image">
+  <h3>Test cocktail title</h3>
+  <p>Test cocktail description</p>
+</router-link-stub>
+`;

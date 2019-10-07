@@ -1,0 +1,681 @@
+[
+  {
+    "title": "Aperol Spritz",
+    "description": "This simple recipe, listed on the back of the Aperol bottle, is one of the most refreshing summer coolers.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Aperol",
+        "price": 51.64
+      },
+      {
+        "quantity": "1 oz.",
+        "title": "Carpenè Malvolti Prosecco",
+        "price": 38.35
+      },
+      {
+        "quantity": "1 oz.",
+        "title": "Club Soda"
+      },
+      {
+        "quantity": "0.5 oz.",
+        "title": "Orange Juice"
+      }
+    ],
+    "method": "Add everything to a chilled rocks glass, then fill with ice. Stir and garnish with half an orange wheel.",
+    "source": "Classic, 2007",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/aperol-spritz.jpg",
+    "imageCredit": "https://www.chatelaine.com/recipe/dinner/classic-aperol-spritz/"
+  },
+  {
+    "title": "Bee's Knees",
+    "description": "In the 1930, when Frank Meier was tending the Ritz bar in Paris and creating simple, sophisticated cocktails like this one, calling something Bee's Knees was quite a compliment.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Plymouth Gin",
+        "price": 40.6
+      },
+      {
+        "quantity": "0.75 oz",
+        "title": "Lemon Juice"
+      },
+      {
+        "quantity": "0.75 oz",
+        "title": "Honey Sirup"
+      }
+    ],
+    "method": "Shake with ice and strain into a chilled coupe. No garnish.",
+    "source": "Frank Meier, The Artistry of Mixing Drinks, 1937",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/bees-knees.jpg",
+    "imageCredit": "https://www.foodandwine.com/recipes/bees-knees-cocktails-2012"
+  },
+  {
+    "title": "Caipirinha",
+    "description": "According to cocktail historians Jared Brown and Anistatia Miller, \"Caipirinha\" is a Brazilian word used to describe a \"country bumpkin\".",
+    "ingredients": [
+      {
+        "quantity": "2 oz",
+        "title": "Beleza Pura Cachaça",
+        "price": 20.34
+      },
+      {
+        "quantity": "0.5",
+        "title": "Lime"
+      },
+      {
+        "quantity": "2 barspoons",
+        "title": "Demerara Sugar"
+      }
+    ],
+    "method": "Muddle the lime and sugar. Add the cachaça, then shake with ice and pour unstrained into a chilled rocks glass. No garnish.",
+    "source": "Charles Schumann, Tropical Bar Book, 1989",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/caipirinha.jpg",
+    "imageCredit": "https://www.196flavors.com/brazil-caipirinha/"
+  },
+  {
+    "title": "Daiquiri",
+    "description": "Charles H. Baker claims his friends Harry Stout and Jennings Cox created the Daiquiri in a village of the same name situated outside the Bacardi plant in Santiago de Cuba.",
+    "ingredients": [
+      {
+        "quantity": "2 oz",
+        "title": "Banks 5 Island Rum",
+        "price": 54.9
+      },
+      {
+        "quantity": "0.75 oz",
+        "title": "Lime Juice"
+      },
+      {
+        "quantity": "0.75 oz",
+        "title": "Simple Sirup"
+      }
+    ],
+    "method": "Shake with ice and strain into a chilled coupe. Garnish with a lime wheel.",
+    "source": "Jaques Straub, Drinks, 1914",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/daiquiri.jpg",
+    "imageCredit": "https://www.liquor.com/articles/bacardi-daiquiri-history/"
+  },
+  {
+    "title": "El Diablo",
+    "description": "Trader Vic's revised bartender's manual devoted 9 pages to tequila drinks, 8 more than any other significant cocktail book of the century.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Siembra Azul Blanco Tequila",
+        "price": 30.53
+      },
+      {
+        "quantity": "1 oz.",
+        "title": "Ginger Beer"
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Theuriet Crème de Cassis",
+        "price": 27.23
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Lemon Juice"
+      }
+    ],
+    "method": "Shake with ice and strain into a chilled rocks glass filled with ice. Garnish with a lemon wheel and candied ginger.",
+    "source": "Jules Bergeron, Trader Vic's Bartender's Guide, 1972",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/el-diablo.jpeg",
+    "imageCredit": "https://www.simmerandsauce.com/drinks/el-diablo-cocktail/"
+  },
+  {
+    "title": "Flying Dutchman",
+    "description": "An ancestor of the Aviation Cocktail, the name references Dutch genever, not the cursed ship forever lost at sea.",
+    "ingredients": [
+      {
+        "quantity": "0.75 oz.",
+        "title": "Clear Creek Plum Brandy",
+        "price": 28.42
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Bols Genever",
+        "price": 34.19
+      },
+      {
+        "quantity": "0.5 oz.",
+        "title": "Creme Yvette",
+        "price": 36.95
+      },
+      {
+        "quantity": "0.5 oz.",
+        "title": "Lemon Juice"
+      },
+      {
+        "quantity": "0.5 oz.",
+        "title": "Pineapple Juice"
+      },
+      {
+        "quantity": "1 barspoon ",
+        "title": "Luxardo Maraschino Liqueur",
+        "price": 29.74
+      }
+    ],
+    "method": "Shake with ice and strain into a chilled coupe. Garnish with one brandied cherry.",
+    "source": "Jim Meehan, Winter 2009",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/flying-dutchman.jpg",
+    "imageCredit": "https://www.liquor.com/recipes/flying-dutchman/#gs.7ybjnz"
+  },
+  {
+    "title": "Gimlet",
+    "description": "The Gimlet may have been named after British Royal Navy Surgeon General Sir Thomas Gimlette, who took his scurvy inhibitor with a tot of gin.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Plymouth Gin",
+        "price": 40.6
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Lime Cordial",
+        "price": 20.03
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Lime Juice"
+      }
+    ],
+    "method": "Shake with ice and strain into a chilled coupe. Garnish with a lime wheel.",
+    "source": "Harry McElbone, ABC of mixing Cocktails, 1922",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/gimlet.jpg",
+    "imageCredit": "https://www.bbcgoodfood.com/recipes/gimlet"
+  },
+  {
+    "title": "Hotel D'Alsace",
+    "description": "David Slape named thi drink after the post Parisian hotel where Irish scribe and spirits devotee Oscar Wilde spent his last years.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Bushmills Irish Whiskey",
+        "price": 49.74
+      },
+      {
+        "quantity": "0.5 oz.",
+        "title": "Cointreau",
+        "price": 48.57
+      },
+      {
+        "quantity": "0.5 oz.",
+        "title": "Bénédictine",
+        "price": 44.08
+      },
+      {
+        "quantity": "1 sprig",
+        "title": "Rosemary"
+      }
+    ],
+    "method": "Add the Cointreau, Bénédictine, and bottom half of rosemary sprig to a mixing glass and muddle. Add Bushmills and ice, then stir and fine-strain over one large cube into a chilled rocks glass. Garnish with the tip of the rosemary sprig.",
+    "source": "David Slape, Spring 2008",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/hotel-dalsace.jpg",
+    "imageCredit": "https://honestlyyum.com/403/hotel-dalsace/"
+  },
+  {
+    "title": "Improved Whiskey Cocktail",
+    "description": "In \"Imbibe!\" David Wondrich traces the evolution of the plain whiskey cocktail to more evolved versions such as the Fancy Whiskey Cocktail in the 1862 edition and the Improved version above, which appeared 14 years later.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Rittenhouse Bonded Rye Whiskey",
+        "price": 39.28
+      },
+      {
+        "quantity": "0.25 oz.",
+        "title": "Luxardo Maraschino Liqueur",
+        "price": 29.74
+      },
+      {
+        "quantity": "0.25 oz.",
+        "title": "Simple Sirup"
+      },
+      {
+        "quantity": "2 dashes",
+        "title": "Angostura Bitters",
+        "price": 44.41
+      }
+    ],
+    "method": "Stir with ice and strain over one large cube into a chilled, Vieux Pontarlier Absinthe-rinsed rocks glass. Garnish with a lemon twist.",
+    "source": "Jerry Thomas, Bar-Tenders Guide 1986",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/improved-whiskey-cocktail.jpg",
+    "imageCredit": "https://hespokestyle.com/improved-whiskey-cocktail-recipe/"
+  },
+  {
+    "title": "Jack Rose",
+    "description": "One of the many hypothesis surrounding the name of this drink is that it is a corruption of Jacquemont, a pink rose with a similar hue to this drink.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Laird's Bonded Apple Brandy",
+        "price": 54.78
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Lemon Juice"
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Grenadine",
+        "price": 29.69
+      }
+    ],
+    "method": "Shake with ice and strain into a chilled coupe. No garnish.",
+    "source": "William Boothby, The World's Drinks and How to Mix Them, 1908",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/jack-rose.jpg",
+    "imageCredit": "https://www.liquor.com/recipes/jack-rose/"
+  },
+  {
+    "title": "Kansai Kick",
+    "description": "Using the Cameron's Kick cocktail as a template, John deBary substituted malt whiskey aged on Japan's Kansai plain in place of its Celtic brethren, used lime in place of lemon juice, and added a little Madeira for complexity.",
+    "ingredients": [
+      {
+        "quantity": "1.5 oz.",
+        "title": "Yamazaki 12-Year-Old Japanese Single Malt Whisky",
+        "price": 37.96
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Blandy's Sercial Madeira",
+        "price": 38.57
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Lime Juice"
+      },
+      {
+        "quantity": "0.4 oz.",
+        "title": "Kassatly Chtaura Orgeat",
+        "price": 45.73
+      }
+    ],
+    "method": "Shake with ice and strain into a chilled coupe. No garnish.",
+    "source": "John deBary, Spring 2010",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/kansai-kick.jpg",
+    "imageCredit": "https://www.foodandwine.com/recipes/kansai-kick-cocktails-2013"
+  },
+  {
+    "title": "Left Hand Cocktail ",
+    "description": "Sam Ross combined his favourite classics, Italy's Negroni and America's Manhattan, into one drink and named the result after Lefty, an Italian-American character from the movie Donnie Brasco.",
+    "ingredients": [
+      {
+        "quantity": "1.5 oz.",
+        "title": "Elijah Craig 12-Year-Old Bourbon",
+        "price": 50.47
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Carpano Antica Sweet Vermouth",
+        "price": 59.81
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Campari",
+        "price": 20.12
+      },
+      {
+        "quantity": "2 dashes",
+        "title": "Bittermens Xocolatl Mole Bitters",
+        "price": 22.51
+      }
+    ],
+    "method": "Stir with ice and strain into a chilled coupe. Garnish with 3 brandied cherries on a pick.",
+    "source": "Sam Ross, New York, 2007",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/left-hand-cocktail.jpg",
+    "imageCredit": "https://fritesandfries.com/post/126587007454/the-left-hand-cocktail"
+  },
+  {
+    "title": "Martini",
+    "description": "Over the last hundred years, the preparation and choice of garnish of this protean cocktail has been one of the most accurate methods to measure the palate of an era.",
+    "ingredients": [
+      {
+        "quantity": "3 oz.",
+        "title": "Plymouth Gin",
+        "price": 40.6
+      },
+      {
+        "quantity": "1 oz.",
+        "title": "Dolin Dry Vermouth",
+        "price": 55.68
+      }
+    ],
+    "method": "Stir with ice and strain into a chilled coupe. Garnish with three olives on a pick or a lemon twist.",
+    "source": "Frank Newman, American Bar, 1904",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/martini.jpg",
+    "imageCredit": "https://sipsmith.com/why-do-we-put-olives-in-martinis/"
+  },
+  {
+    "title": "Negroni",
+    "description": "The combination of gin, sweet vermouth and Campari showed up as the Camparinette and the Campari Cardinal in French and Spanish cocktail books such as \"Cien Cocktails\" and \"L'Heure du Cocktail\" before being recognized universally as the Negroni.",
+    "ingredients": [
+      {
+        "quantity": "1.25 oz.",
+        "title": "Beefeater Gin",
+        "price": 50.57
+      },
+      {
+        "quantity": "1.25 oz.",
+        "title": "Campari",
+        "price": 20.12
+      },
+      {
+        "quantity": "1.25 oz.",
+        "title": "Martini Sweet Vermouth",
+        "price": 36.73
+      }
+    ],
+    "method": "Stir with ice and strain into chilled coupe or over ice in a chilled rocks glass. Garnish with an orange twist.",
+    "source": "J.S. Brucart, Cien Cocktails, 1943",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/negroni.jpg",
+    "imageCredit": "https://www.thespruceeats.com/negroni-cocktail-recipe-759327"
+  },
+  {
+    "title": "Old-Fashioned Whiskey Cocktail",
+    "description": "In 1806, the word cocktail was defined in the \"Balance and Columbian Repository\" newspaper as a \"stimulating liquor, composed of spirits of any kind, sugar, water and bitters - it is vulgarly called a bittered sling...\" By 1888, the cocktail as defined above was already old hat!",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Wild Turkey Rye Whiskey",
+        "price": 26.88
+      },
+      {
+        "quantity": "1 cube",
+        "title": "Demerara Sugar"
+      },
+      {
+        "quantity": "2 dashes",
+        "title": "Angostura Bitters",
+        "price": 44.41
+      }
+    ],
+    "method": "Muddle, stir with ice and strain over one large cube into a chilled rocks glass. Garnish with a lemon twist.",
+    "source": "Theodore Prolux, The Bartender's Manual, 1888",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/old-fashioned.jpg",
+    "imageCredit": "http://whiskyadvocate.com/old-fashioned-cocktail-recipe/"
+  },
+  {
+    "title": "Pisco Sour",
+    "description": "The Pisco sour was first served by Californian Victor Morris, who substituted Pisco for whiskey in the sours served at his bar in Lima, Peru.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "La Diablada Pisco",
+        "price": 33.02
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Lime Juice",
+        "price": 2.55
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Simple Syrup"
+      },
+      {
+        "quantity": "1",
+        "title": "Egg White"
+      }
+    ],
+    "method": "Dry-shake, then shake with ice and strain into a chilled egg coupe. Garnish with 4 drops Angostura Bitters switled with two straws.",
+    "source": "Charles H. Baker Jr., The South American Gentleman's Companion, 1951",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/pisco-sour.jpg",
+    "imageCredit": "https://www.liquor.com/recipes/pisco-sour/"
+  },
+  {
+    "title": "Queens Park Swizzle",
+    "description": "Swizzles are traditionally prepared with a barspoon-length dried branch from a tropical bush that has five pruned prongs at the end.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Barbancourt 8-Year-Old Rhum",
+        "price": 46.97
+      },
+      {
+        "quantity": "1 oz.",
+        "title": "Lime Juice",
+        "price": 2.55
+      },
+      {
+        "quantity": "0.5 oz.",
+        "title": "Demerara Syrup"
+      },
+      {
+        "quantity": "8",
+        "title": "Mint leaves"
+      },
+      {
+        "quantity": "2 dashes",
+        "title": "Peychaud's Bitters",
+        "price": 45.1
+      },
+      {
+        "quantity": "2 dashes",
+        "title": "Angostura Bitters",
+        "price": 44.41
+      }
+    ],
+    "method": "Muddle mint leaves and demerara syrup in a chilled Collins glass. Add rhum, lime and pebble ice, then swizzle and top with more pebbled ice. Add 2 dashes 2 dashes Peychaud's Bitters and 2 dashes Angostura Bitters. Garnish with a mint sprig.",
+    "source": "Jules Bergeron, Trader Vic's Bartender's Guide",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/queens-park-swizzle.jpg",
+    "imageCredit": "https://www.alcoholprofessor.com/blog-posts/blog/2016/02/01/cocktails-in-history-queens-park-swizzle"
+  },
+  {
+    "title": "Rusty Nail",
+    "description": "According to David Wondrich, the B.I.F. cocktail, composed of Scotch and Drambuie, first appeared in 1937. Now known as the Rusty Nail, the recipe under this name didn't appear in popular cocktail books until the 1970's.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Famous Grouse Blended Scotch Whisky",
+        "price": 42.51
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Drambouie",
+        "price": 41.06
+      }
+    ],
+    "method": "Stir with ice and strain over a large cube into a chilled rocks glass. No garnish.",
+    "source": "Stan Jones, Jones' Complete Barguide, 1977",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/rusty-nail.jpg",
+    "imageCredit": "https://blog.saloonbox.com/home/2016/5/12/rusty-nail-cocktail-recipe"
+  },
+  {
+    "title": "Sidecar",
+    "description": "According to Vermiere, this cocktail \"was first introduced by MacGarry, the celebrated bartender of Buck's Club\" in London.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Rémy Martin V.S.O.P. Cognac",
+        "price": 22.28
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Cointreau",
+        "price": 48.57
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Lemon Juice"
+      },
+      {
+        "quantity": "0.25 oz.",
+        "title": "Simple Syrup"
+      }
+    ],
+    "method": "Shake with ice and strain into a chilled, half sugar-rimmed coupe. No garnish.",
+    "source": "Robetr Vermiere, Cocktails: How to Mix Them, 1922",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/sidecar.jpg",
+    "imageCredit": "https://www.epicurious.com/recipes/food/views/sidecar-350783"
+  },
+  {
+    "title": "Tom Collins",
+    "description": "This cocktail was named after John Collins, a waiter at Limmer's Hotel in London, who was famous for his gin punch.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Hayman's Old Tom Gin",
+        "price": 27.93
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Lemon Juice"
+      },
+      {
+        "quantity": "0.5 oz.",
+        "title": "Simple Syrup"
+      },
+      {
+        "quantity": "2 oz.",
+        "title": "Club Soda"
+      }
+    ],
+    "method": "Shake with ice and strain into a chilled Collins glass filled with ice. Top with 2 oz. Club Soda and garnish with a lemon wedge.",
+    "source": "Jerry Thomas, Bar-Tender's Guide, 1876",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/tom-collins.jpg",
+    "imageCredit": "https://www.remymartin.com/us/cocktails/tom-collins-vsop/"
+  },
+  {
+    "title": "Up To Date",
+    "description": "Ensslin calls for Sherry Wine in the recipe, leaving the style open for interpretation. While an Oloroso would work nicely, Manzanilla lends vibrant salinity and bracing acidity.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Wild Turkey Rye Whiskey",
+        "price": 26.88
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Lustau Manzanilla Sherry",
+        "price": 20.08
+      },
+      {
+        "quantity": "0.5 oz.",
+        "title": "Grand Marnier",
+        "price": 54.05
+      },
+      {
+        "quantity": "2 dashes",
+        "title": "Angostura Bitters",
+        "price": 44.41
+      }
+    ],
+    "method": "Stir with ice and strain into a chilled coupe. Garnish with a lemon twist.",
+    "source": "Hugo Ensslin, Recipes for Mixed Drinks, 1916",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/up-to-date.jpg",
+    "imageCredit": "https://punchdrink.com/recipes/up-to-date-cocktail/"
+  },
+  {
+    "title": "Vesper",
+    "description": "This Martini hybrid, named after Bond's love interest in Casino Royale, is largely culpable for a generation of imbibers thinking that spirituous drinks should be shaken, not stirred.",
+    "ingredients": [
+      {
+        "quantity": "2.25 oz.",
+        "title": "Plymouth Gin",
+        "price": 40.6
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Belvedere Vodka",
+        "price": 45.49
+      },
+      {
+        "quantity": "0.5 oz.",
+        "title": "Lillet Blanc",
+        "price": 38.45
+      }
+    ],
+    "method": "Stir with ice and strain into a chilled coupe. Granish with a lemon twist.",
+    "source": "Iam Fleming, Casino Royale, 1953",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/vesper.jpg",
+    "imageCredit": "https://www.liquor.com/recipes/vesper/"
+  },
+  {
+    "title": "White Lady",
+    "description": "You can still order McElbone's creation at Harry's New York Bar in Paris from one of the bar's old-school, white-coated barmen.",
+    "ingredients": [
+      {
+        "quantity": "2 oz.",
+        "title": "Beefeater Gin",
+        "price": 50.57
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Cointreau",
+        "price": 48.57
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Lemon Juice"
+      },
+      {
+        "quantity": "0.25 oz.",
+        "title": "Simple Syrup"
+      },
+      {
+        "quantity": "1",
+        "title": "Egg White"
+      }
+    ],
+    "method": "Dry-shake, then shake with ice and strain into a chilled egg coupe. No garnish.",
+    "source": "Harry McEllbone, ABC of Mixing Cocktails, 1929",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/white-lady.jpg",
+    "imageCredit": "https://food52.com/recipes/29785-white-lady"
+  },
+  {
+    "title": "Zombie Punch",
+    "description": "Tiki bar owners like Donn Beach went through a lot of trouble to keep their recipes a secret: only the most trusted stuff members knew the full recipes, which were batched secretly and given to the bartenders on the front line to mix out of numbered bottles.",
+    "ingredients": [
+      {
+        "quantity": "1.5 oz.",
+        "title": "Appleton Estate Reserve Rum",
+        "price": 39.1
+      },
+      {
+        "quantity": "1.5 oz.",
+        "title": "Bacardi 8 Rum",
+        "price": 40.57
+      },
+      {
+        "quantity": "1 oz.",
+        "title": "Lemon Hart Overproof Rum",
+        "price": 49.91
+      },
+      {
+        "quantity": "0.75 oz.",
+        "title": "Lime Juice"
+      },
+      {
+        "quantity": "0.5 oz.",
+        "title": "John D. Taylors Velvet Falernum",
+        "price": 24.2
+      },
+      {
+        "quantity": "0.5 oz.",
+        "title": "Trader Tiki's Don's Mix",
+        "price": 35.64
+      },
+      {
+        "quantity": "1 barspoon",
+        "title": "Grenadine",
+        "price": 29.69
+      },
+      {
+        "quantity": "1/8 tsp.",
+        "title": "Vieux Pantarlier Absinthe",
+        "price": 58.68
+      },
+      {
+        "quantity": "1 dash",
+        "title": "Angostura Bitters",
+        "price": 44.41
+      }
+    ],
+    "method": "Shake with ice and strain into a chilled tiki mug filled with pebble ice. Garnish with a mint sprig.",
+    "source": "Don the Beachcomber, 1934",
+    "imageUrl": "https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/zombie-punch.jpg",
+    "imageCredit": "https://www.thespruceeats.com/zombie-punch-recipe-759868"
+  }
+]

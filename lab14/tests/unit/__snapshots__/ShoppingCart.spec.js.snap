@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShoppingCart.vue matches the snapshot 1`] = `
+<section>
+  <h1>Shopping cart</h1>
+  <div class="items">
+    <div>
+      <ul>
+        <li>
+          <shoppingcartitem-stub title="testIngredient" price="111.222" quantity="2" skin=""></shoppingcartitem-stub>
+        </li>
+      </ul>
+    </div>
+    <div class="totals">
+      <p>Enter your 10-digit promo code:</p> <input type="text">
+      <!---->
+      <p>
+        Subtotal: 222.444 CHF XYZ<br>
+        Delivery fee: 0 CHF XYZ<br>
+        Total: 222.444 CHF XYZ
+      </p>
+    </div>
+  </div>
+</section>
+`;
