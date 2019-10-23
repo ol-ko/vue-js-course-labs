@@ -1,4 +1,4 @@
-# Lab 13 - Testing
+# Lab 14 - Testing
 
 1. Run `yarn && yarn serve` inside this folder.
 1. In your IDE, open the `src` folder and explore the code. Note the `tests` folder and an example test file.
