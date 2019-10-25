@@ -13,8 +13,8 @@ Note how we only perform an API call, when component is `mounted`.
     ![component lifecycle diagram](https://vuejs.org/images/lifecycle.png)
     </details>
  
-What other hooks can we use to do the initial data fetching?
-And which ones are not suitable? Why?
+    What other hooks can we use to do the initial data fetching?
+    And which ones are not suitable? Why?
 
     <details>
     <summary>Hint</summary>
