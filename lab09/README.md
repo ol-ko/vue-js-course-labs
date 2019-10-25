@@ -30,7 +30,6 @@ Note how we only perform an API call, when component is `mounted`.
     Try different lifecycle hooks in place of `created` and test by opening and reloading the cocktail details. 
     Don't forget to look into browser console for errors!
     Restore the code to use `created` hook after testing.
-    </details>
     
 1. Now let's try something.
 Open `http://localhost:8080/cocktails/aperol-spritz`.
