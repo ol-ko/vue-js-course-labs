@@ -2,6 +2,7 @@
 
 1. Run `yarn && yarn serve` inside this folder.
 1. In your IDE, open the `src` folder and explore the code. A `store.js` file has appeared, and this is our future Vuex store, so far empty.
+Also, 
 Let's refactor our application to use Vuex store.
 1. Let's start by removing data from the `main.js` file - we don't need this workaround anymore! Let's declare same two properties with same initial values in our store's state.
 
@@ -418,8 +419,8 @@ Oh, and let's not forget about error handling this time.
     </details>
 
 1. If we try adding recipes to favorites or ingredients to the shopping cart, numbers on the navigation links won't update.
-That's because that code's commented out. And it's still referring to the `this.$root`, which is no good.
-If we want to make it work with our shiny new store, Which Vuex concept should we be using?
+That's because that code still depends on `this.$root`.
+If we want to make it work with our shiny new store, which Vuex concept should we be using?
 
     <details>
     <summary>Hint</summary>
@@ -427,7 +428,7 @@ If we want to make it work with our shiny new store, Which Vuex concept should w
     Getters are the best to compute derived state based on store state. 
     </details>
 
-1. Now let's refactor that part!
+1. Now let's refactor the part
 
     <details>
     <summary>Hint</summary>
@@ -460,15 +461,7 @@ If we want to make it work with our shiny new store, Which Vuex concept should w
     ```
     
     `App.vue`
-    ```vue
-    <template>
-        ....
-        <span v-if="favoriteCocktailsTotal > 0">({{ favoriteCocktailsTotal }})</span>
-        ....
-        <span v-if="shoppingCartItemsTotal > 0">({{ shoppingCartItemsTotal }})</span>
-        ....
-    </template>
-    
+    ```vue 
     <script>
       export default {
         computed: {

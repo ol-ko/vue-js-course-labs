@@ -107,6 +107,7 @@
   .button {
     color: black;
     background: white;
+    padding: 0 0.5em;
     border: 2px solid black;
     height: 32px;
     line-height: 28px;

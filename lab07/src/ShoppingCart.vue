@@ -73,7 +73,7 @@ export default {
   },
   methods: {
     removeFromShoppingList(ingredientTitle) {
-      this.$delete(this.$root.shoppingCartItems, ingredientTitle);
+      this.$delete(this.items, ingredientTitle);
     }
   },
   watch: {

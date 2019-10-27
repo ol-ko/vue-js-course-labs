@@ -1,7 +1,7 @@
 <template>
   <div id='app'>
     <CocktailList @ingredientClick="addToShoppingList" @cocktailClick="addToFavorites"></CocktailList>
-    <FavoriteCocktails :items="favoriteCocktails"></FavoriteCocktails>
+    <FavoriteCocktails :items="favoriteCocktails"  @ingredientClick="addToShoppingList"></FavoriteCocktails>
     <ShoppingCart :items="shoppingCartItems"></ShoppingCart>
   </div>
 </template>

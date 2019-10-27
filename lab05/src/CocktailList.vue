@@ -2,7 +2,7 @@
   <section>
     <h1>Recipes</h1>
     <div v-for="cocktail in cocktails">
-      <Cocktail :cocktail="cocktail" @ingredientClick="onIngredientClick"/>
+      <Cocktail :cocktail="cocktail" @ingredientClick="$emit('ingredientClick', $event)"/>
       <button @click="$emit('cocktailClick', cocktail)">Add to favorites</button>
     </div>
   </section>
@@ -18,6 +18,7 @@
       return {
         cocktails: [
           {
+            id: 'aperol-spritz',
             title: 'Aperol Spritz',
             ingredients: [
               {
@@ -43,6 +44,7 @@
             imageUrl: 'https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/aperol-spritz.jpg'
           },
           {
+            id: 'bees-knees',
             title: 'Bee\'s Knees',
             ingredients: [
               {
@@ -63,6 +65,7 @@
             imageUrl: 'https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/bees-knees.jpg'
           },
           {
+            id: 'caipirinhas',
             title: 'Caipirinha',
             ingredients: [
               {
@@ -83,11 +86,6 @@
             imageUrl: 'https://cocktail-recipes-for-vue-js-training.s3.eu-central-1.amazonaws.com/caipirinha.jpg'
           }
         ]
-      }
-    },
-    methods: {
-      onIngredientClick(ingredient) {
-        this.$emit('ingredientClick', ingredient);
       }
     }
   }

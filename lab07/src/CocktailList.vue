@@ -4,10 +4,9 @@
     <div v-for="cocktail in items" class="cocktailListItem">
       <Cocktail :cocktail="cocktail" @ingredientClick="onIngredientClick" />
       <button
-        v-if="displayAddToFavoritesButton"
+        v-text="displayAddToFavoritesButton ? 'Add to favorites' : 'Remove from favorites'"
         @click="$emit('cocktailClick', cocktail)"
         class="button">
-        Add to favorites
       </button>
     </div>
   </section>

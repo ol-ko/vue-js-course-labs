@@ -15,7 +15,7 @@
         :active-class="$style.navLinkActive"
         exact>
         Favorite recipes
-        <!--<span v-if="favoriteCocktailsTotal > 0">({{ favoriteCocktailsTotal }})</span>-->
+        <span v-if="favoriteCocktailsTotal > 0">({{ favoriteCocktailsTotal }})</span>
       </router-link>
       <router-link
         to="/shopping-cart"
@@ -23,7 +23,7 @@
         :active-class="$style.navLinkActive"
         exact>
         Shopping cart
-        <!--<span v-if="shoppingCartItemsTotal > 0">({{ shoppingCartItemsTotal }})</span>-->
+        <span v-if="shoppingCartItemsTotal > 0">({{ shoppingCartItemsTotal }})</span>
       </router-link>
     </nav>
     <router-view></router-view>
@@ -31,16 +31,16 @@
 </template>
 
 <script>
-  // export default {
-  //   computed: {
-  //     favoriteCocktailsTotal() {
-  //       return this.$root.favoriteCocktails.length;
-  //     },
-  //     shoppingCartItemsTotal() {
-  //       return Object.entries(this.$root.shoppingCartItems).reduce((sum, [key, value]) => (sum + value.quantity), 0);
-  //     }
-  //   }
-  // }
+  export default {
+    computed: {
+      favoriteCocktailsTotal() {
+        return this.$root.favoriteCocktails && this.$root.favoriteCocktails.length;
+      },
+      shoppingCartItemsTotal() {
+        return Object.entries(this.$root.shoppingCartItems || {}).reduce((sum, [key, value]) => (sum + value.quantity), 0);
+      }
+    }
+  }
 </script>
 
 <style>

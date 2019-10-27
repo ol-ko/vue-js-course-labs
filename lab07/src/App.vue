@@ -34,7 +34,6 @@
 </template>
 
 <script>
-import Vue from 'vue';
 import CocktailList from "./CocktailList";
 import FavoriteCocktails from "./FavoriteCocktails";
 import ShoppingCart from "./ShoppingCart";
@@ -46,7 +45,6 @@ export default {
     FavoriteCocktails,
     ShoppingCart
   },
-
   methods: {
     addToFavorites(cocktail) {
       if (!this.favoriteCocktails.some(item => item.title === cocktail.title)) {
