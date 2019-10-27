@@ -87,6 +87,13 @@ nav {
   padding: 40px 0;
   text-align: center;
 }
+
+button {
+  color: white;
+  background: black;
+  border: none;
+  padding: 1em;
+}
 </style>
 
 <style module>

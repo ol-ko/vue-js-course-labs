@@ -9,15 +9,7 @@
 <script>
 export default {
   props: {
-    cocktail: {
-      type: Object,
-      validator(value) {
-        if (!value.title || !value.description || !value.id || !value.imageUrl) {
-          return false;
-        }
-        return true;
-      }
-    }
+    cocktail: Object
   }
 };
 </script>

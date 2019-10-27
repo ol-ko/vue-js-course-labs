@@ -105,6 +105,8 @@
   }
 
   .button {
+    color: black;
+    background: white;
     border: 2px solid black;
     height: 32px;
     line-height: 28px;

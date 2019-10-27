@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import AllRecipes from './views/AllRecipes.vue'
+import FavoriteRecipes from './views/FavoriteRecipes.vue'
+import ShoppingCart from './views/ShoppingCart.vue'
 
 Vue.use(Router)
 
@@ -16,12 +18,12 @@ export default new Router({
     {
       path: '/favorite-recipes',
       name: 'favorite-recipes',
-      component: () => import(/* webpackChunkName: "favorite-recipes" */ './views/FavoriteRecipes.vue')
+      component: FavoriteRecipes
     },
     {
       path: '/shopping-cart',
       name: 'shopping-cart',
-      component: () => import(/* webpackChunkName: "shopping-cart" */ './views/ShoppingCart.vue')
+      component: ShoppingCart
     }
   ]
 })

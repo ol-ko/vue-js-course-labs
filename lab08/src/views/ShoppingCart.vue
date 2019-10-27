@@ -75,7 +75,7 @@
     },
     methods: {
       removeFromShoppingList(ingredientTitle) {
-        Vue.delete(this.$root.shoppingCartItems, ingredientTitle);
+        this.$delete(this.$root.shoppingCartItems, ingredientTitle);
       }
     },
     watch: {

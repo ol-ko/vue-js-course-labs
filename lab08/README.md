@@ -188,7 +188,7 @@ In a `views` folder create a `Cocktail` component. Copy the code below into it.
              quantity = this.$root.shoppingCartItems[ingredient.title].quantity + 1;
            }
    
-           Vue.set(
+           this.$set(
              this.$root.shoppingCartItems,
              ingredient.title,
              {
@@ -230,7 +230,7 @@ In a `views` folder create a `Cocktail` component. Copy the code below into it.
     </details>
 
 1. For our new cocktail details page, we would like to have a URL like this: `/cocktails/aperol-spritz`, where `aperol-spritz` would be a dynamic part, a cocktail ID.
-Let's go and set this up in our router, mapping a path to the pre-existing 
+Let's go and set this up in our router, mapping a path to the `Cocktail.vue` component:
 
     <details>
     <summary>Hint</summary>
@@ -238,6 +238,7 @@ Let's go and set this up in our router, mapping a path to the pre-existing
     `router.js`
     
     ```js
+      import Cocktail from './views/Cocktail.vue'
       ....
       export default new Router({
         mode: 'history',
@@ -247,7 +248,7 @@ Let's go and set this up in our router, mapping a path to the pre-existing
           {
             path: '/cocktails/:id',
             name: 'cocktail',
-            component: () => import(/* webpackChunkName: "cocktail" */ './views/Cocktail.vue')
+            component: Cocktail
           }
         ]
       })

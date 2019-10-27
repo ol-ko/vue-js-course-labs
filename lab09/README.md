@@ -105,47 +105,4 @@ What else can we use to react to prop updates?
       }
     </script>
     ```
-    
-    Or we can make sure we re-render the whole `SimilarCocktails` component as soon as current cocktail changes.
-    Like this:
-    
-    `Cocktail.vue`
-    ```vue
-    <template>
-      ....
-      <SimilarCocktails v-if="cocktail" :cocktail-id="cocktail.id"></SimilarCocktails>
-    </template>
-    
-    <script>
-      ....
-    
-      export default {
-        ....
-        data() {
-          return {
-            cocktail: undefined,
-            error: undefined
-          }
-        },
-        async beforeRouteUpdate (to, from, next) {
-          let response;
-          // this will cause v-if directive in a template 
-          // to remove previous instance of the SimilarCocktails component
-          // until the new data arrives - this way the component will always be re-mounted 
-          // when the data changes
-          this.cocktail = undefined; 
-          try {
-            response = await getCocktailData(to.params.id);
-            this.cocktail = response.data;
-            next();
-          }
-          catch(error) {
-            this.error = error;
-            next();
-          }
-        }
-        ....
-      };
-    </script>
-    ```
     </details> 

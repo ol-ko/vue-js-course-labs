@@ -6,7 +6,8 @@
 Moreover, we are basing our display logic on a value passed via `displayAddToFavoritesButton` property and emitting event, that is handled outside.
 Now we know there is a better way!
 Let's declare a slot in a `CocktailList.vue` component and move those call to action buttons to the parent components, right where they belong.
-And let's not think about styling or handling the click event for now. In fact - let's drop the related attributes for a while. 
+We will drop click event handling for those buttons for now.
+Let's just make sure we display buttons with `Add to favorites` text on `AllRecipes` page and buttons with `Remove from favorites` text on `FavoriteRecipes` page correspondingly. 
 Since adding to favorites wouldn't work for a while, let's put one cocktail recipe into favorites list just so that we can test:
 
     `store.js`

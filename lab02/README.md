@@ -84,7 +84,7 @@
     ```
     </details>
 
-1. For each ingredient, that has a price, display price in CHF.
+1. For each ingredient, that has a price, display price.
 
     <details>
     <summary>Hint</summary>
@@ -110,13 +110,13 @@
     ```
     </details>
 
-1. Now let's try out some more conditional rendering and create a button that toggles the display of prices:
+1. Now let's try out some more conditional rendering and create a button that toggles the display of all prices:
     
     - Prices should be initially hidden.
     - When the prices are hidden, button text is "Show prices".
     - When the prices are displayed, button text should change to "Hide prices".
     
-   As we know, there are a few directives, that could help us achieve the desired effect. Choose the one you like.
+   As we know, there are a few directives, that could help us display things conditionally. Choose the one you like.
          
    <details>
     <summary>Hint</summary>
@@ -142,6 +142,17 @@
         </div>
       </div>
     </template>  
+
+    <script>
+     export default {
+       data() {
+         return {
+           displayPrices: true,
+           ....
+         }
+       }
+     }
+    </script>
     ```
    </details>
     
@@ -172,4 +183,4 @@
       </div>
    </template>
     ```
-    </details>
+   </details>

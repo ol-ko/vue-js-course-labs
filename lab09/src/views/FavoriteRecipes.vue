@@ -11,7 +11,6 @@
 </template>
 
 <script>
-  import Vue from 'vue';
   import CocktailList from '@/components/CocktailList';
 
   export default {
@@ -25,7 +24,7 @@
     },
     methods: {
       removeFromFavorites(cocktail) {
-        Vue.delete(
+        this.$delete(
           this.$root.favoriteCocktails,
           this.$root.favoriteCocktails.findIndex(item => item.title === cocktail.title)
         );

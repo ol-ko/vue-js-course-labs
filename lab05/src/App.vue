@@ -7,7 +7,6 @@
 </template>
 
 <script>
-  import Vue from 'vue';
   import CocktailList from './CocktailList';
   import FavoriteCocktails from './FavoriteCocktails';
   import ShoppingCart from './ShoppingCart';
@@ -33,7 +32,7 @@
           quantity = this.shoppingCartItems[ingredient.title].quantity + 1;
         }
 
-        Vue.set(
+        this.$set(
           this.shoppingCartItems,
           ingredient.title,
           {

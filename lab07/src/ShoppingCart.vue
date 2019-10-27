@@ -8,7 +8,8 @@
             <ShoppingCartItem
               :title="title"
               :price="data.price"
-              :quantity="data.quantity">
+              :quantity="data.quantity"
+              @removeItem="removeFromShoppingList">
             </ShoppingCartItem>
           </li>
         </ul>
@@ -68,6 +69,11 @@ export default {
       return (
         (this.subtotal + this.deliveryFee) * (this.applyPromotion ? 0.9 : 1)
       );
+    }
+  },
+  methods: {
+    removeFromShoppingList(ingredientTitle) {
+      this.$delete(this.$root.shoppingCartItems, ingredientTitle);
     }
   },
   watch: {

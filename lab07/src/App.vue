@@ -54,7 +54,7 @@ export default {
       }
     },
     removeFromFavorites(cocktail) {
-      Vue.delete(
+      this.$delete(
         this.favoriteCocktails,
         this.favoriteCocktails.findIndex(item => item.title === cocktail.title)
       );
@@ -66,7 +66,7 @@ export default {
         quantity = this.shoppingCartItems[ingredient.title].quantity + 1;
       }
 
-      Vue.set(
+      this.$set(
         this.shoppingCartItems,
         ingredient.title,
         {
@@ -75,7 +75,7 @@ export default {
         });
     },
     removeFromShoppingList(ingredientTitle) {
-      Vue.delete(this.shoppingCartItems, ingredientTitle);
+      this.$delete(this.shoppingCartItems, ingredientTitle);
     },
     switchToAllRecipes() {
       this.showAllCocktails = true;

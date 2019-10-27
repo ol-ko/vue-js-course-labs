@@ -309,7 +309,7 @@ Which Vuex concept would you use for this?
     Asynchronous operations can be done in actions. 
     </details>
 
-1. Let's declare an `allRecipes` property in the store state, initialize it with an empty array and use it in the `AllRecipes.vue`.
+1. Let's declare an `allCocktails` property in the store state, initialize it with an empty array and use it in the `AllRecipes.vue`.
 
     <details>
     <summary>Hint</summary>
@@ -319,7 +319,7 @@ Which Vuex concept would you use for this?
     ....
     export default new Vuex.Store({
       state: {
-        allRecipes: [],
+        allCocktails: [],
         shoppingCartItems: {},
         favoriteCocktails: []
       },
@@ -340,7 +340,7 @@ Which Vuex concept would you use for this?
         ....
         computed: {
           cocktails() {
-            return this.$store.state.allRecipes;
+            return this.$store.state.allCocktails;
           }
         },
         ....
@@ -349,7 +349,7 @@ Which Vuex concept would you use for this?
     ```
     </details>
 
-1. Now let's create a `fetchAllRecipes` action in the store and move the logic from `beforeMount` hook of the `AllRecipes.vue`.
+1. Now let's create a `fetchAllCocktails` action in the store and move the logic from `beforeMount` hook of the `AllRecipes.vue`.
 Remember that as a result action is supposed to commit a mutation, which we'll also need to create. 
 Oh, and let's not forget about error handling this time.
 
@@ -367,25 +367,25 @@ Oh, and let's not forget about error handling this time.
     export default new Vuex.Store({
       state: {
         error: undefined,
-        allRecipes: [],
+        allCocktails: [],
         shoppingCartItems: {},
         favoriteCocktails: []
       },
       mutations: {
         ....
-        setAllRecipes(state, recipes) {
-          state.allRecipes = recipes;
+        setAllCocktails(state, cocktails) {
+          state.allCocktails = cocktails;
         },
-        setError(state, recipes) {
-          state.error = recipes;
+        setError(state, error) {
+          state.error = error;
         }
       },
       actions: {
-        async fetchAllRecipes(context) {
+        async fetchAllCocktails(context) {
           let response;
           try {
             response = await axios.get('https://anca22974l.execute-api.eu-central-1.amazonaws.com/dev/cocktails');
-            context.commit('setAllRecipes', response.data)
+            context.commit('setAllCocktails', response.data)
           }
           catch(error) {
             context.commit('setError', error)
@@ -402,14 +402,14 @@ Oh, and let's not forget about error handling this time.
         ....
         computed: {
           cocktails() {
-            return this.$store.state.allRecipes;
+            return this.$store.state.allCocktails;
           },
           error() {
             return this.$store.state.error;
           }
         },
         mounted() {
-          this.$store.dispatch('fetchAllRecipes');
+          this.$store.dispatch('fetchAllCocktails');
         },
         ....
       }
@@ -438,7 +438,7 @@ If we want to make it work with our shiny new store, Which Vuex concept should w
     export default new Vuex.Store({
       state: {
         error: undefined,
-        allRecipes: [],
+        allCocktails: [],
         shoppingCartItems: {},
         favoriteCocktails: []
       },

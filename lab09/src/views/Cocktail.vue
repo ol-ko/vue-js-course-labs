@@ -35,7 +35,6 @@
 <script>
   import SimilarCocktails from '@/components/SimilarCocktails';
   import axios from 'axios';
-  import Vue from 'vue';
 
   function getCocktailData(id) {
     return axios.get(`https://anca22974l.execute-api.eu-central-1.amazonaws.com/dev/cocktails/${id}`)
@@ -81,7 +80,7 @@
           quantity = this.$root.shoppingCartItems[ingredient.title].quantity + 1;
         }
 
-        Vue.set(
+        this.$set(
           this.$root.shoppingCartItems,
           ingredient.title,
           {

@@ -6,7 +6,6 @@
         <CocktailListItem :cocktail="cocktail" />
         <button
             @click="$emit('cocktailClick', cocktail)"
-            :class="$style.button"
             v-text="displayAddToFavoritesButton ? 'Add to favorites' : 'Remove from favorites'">
         </button>
       </div>
@@ -33,13 +32,6 @@ export default {
 </script>
 
 <style module>
-.button {
-  color: white;
-  background: black;
-  border: none;
-  padding: 1em;
-}
-
 .cocktailList {
   display: flex;
   flex-wrap: wrap;

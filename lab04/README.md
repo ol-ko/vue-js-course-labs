@@ -3,52 +3,54 @@
 1. Run `yarn && yarn serve` inside this folder. Open the started website and see that it is displaying list of recipes and a list of favorites, just like the previous lab.
 1. In your IDE, open `src/App.vue` file and explore the code. See that the template became a little repetitive? Time to extract some logic into a component!
 1. Add some recipes to favorites, notice that now we display not just the title, but the whole recipe.
-1. In an `src` folder, create a `Cocktail.vue` file. In this file, declare a Vue component, that receives a mandatory `cocktail` property and is able to display the cocktail data in the same way as `App.vue` did
+1. In an `src` folder, create a `Cocktail.vue` file. In this file, declare a Vue component, that receives a mandatory `cocktail` property (we will be passing the whole cocktail object through it).
+Here's the code for the `<template>` part to speed things up:
+
+    `Cocktail.vue`
+    ```vue
+    <template>
+      <div class="cocktail">
+          <div><img :src="cocktail.imageUrl" width="200"></div>
+          <div>
+            <h3>
+              {{cocktail.title}}
+            </h3>
+            <ul>
+              <li v-for="ingredient in cocktail.ingredients">
+                {{ingredient.quantity}} {{ingredient.title}}
+              </li>
+            </ul>
+            <div v-html="cocktail.method"></div>
+          </div>   
+      </div>
+    </template>
+    ``` 
 
     <details>
     <summary>Hint</summary>
     
     ```vue
     <template>
-      <div class="cocktail">
-        <div><img :src="cocktail.imageUrl" width="200"></div>
-        <div>
-          <h3>
-            {{cocktail.title}}
-          </h3>
-          <ul>
-            <li v-for="ingredient in cocktail.ingredients">
-              {{ingredient.quantity}} {{ingredient.title}}
-            </li>
-          </ul>
-          <div v-html="cocktail.method"></div>
-        </div>
+      <div>
+        {{cocktail.title}}
       </div>
     </template>
  
     <script>
     export default {
       props: {
-        cocktail: Object
+        cocktail: {
+          type: Object,
+          required: true
+        }
       }
     }
     </script>
-    
-    <style>
-      .cocktail {
-        display: flex;
-      }
-    
-      img {
-        margin: 20px 20px 20px 0;
-      }
-    </style>
-
     ```
     </details>
     
-1. Import the newly created component into `App.vue` and refactor our app to display every cocktail recipe using the `Cocktail` component.
-
+1. Import the newly created component into `App.vue` and refactor our app to display every cocktail recipe using the newly created `Cocktail` component.  
+    
     <details>
     <summary>Hint</summary>
     
@@ -81,19 +83,13 @@
       ....
     }
     </script>
-    
-    <style>
-      #app {
-        display: flex;
-      }
-    </style>
     ```
     </details>
 
 1. Now let's add some functionality to our app.
     Imagine that our young cocktail startup has cut a deal with an online liquor shop.
     We want to add a shopping cart functionality to our website, so that our users can easily shop for ingredients.
-    Let's add a 'Shopping cart' section right after the 'Favorites' one in our `App.vue` and a `shoppingCartItems` data property, that will in future hold a map of ingredients to purchase and their quantity.
+    Let's add a 'Shopping cart' template section right after the 'Favorites' one in our `App.vue` and a `shoppingCartItems` data property, that will hold an array of items user is about to purchase.
     
     <details>
     <summary>Hint</summary>
@@ -112,7 +108,7 @@
     export default {
       data() {
         return {
-         shoppingCartItems: {}
+         shoppingCartItems: []
         }
       }
       ....
@@ -124,7 +120,6 @@
 1. Let's assume that all ingredients, that have prices, are available in our partner liquor shop.  
    In our `Cocktail.vue` component, for those ingredients we have prices for, let's display a "Buy for CHF XYZ" button, where "XYZ" would be the price.  
    When user clicks this button, an ingredient should be added to the `shoppingCartItems` data property in the parent app.  
-   For now, let's assume `shoppingCartItems` is an array. 
    
     <details>
     <summary>Hint</summary>
@@ -243,7 +238,7 @@ First of all - we don't want the shopping cart to look like this:
             quantity = this.shoppingCartItems[ingredient.title].quantity + 1;
           }
     
-          Vue.set(
+          this.$set(
             this.shoppingCartItems,
             ingredient.title,
             {

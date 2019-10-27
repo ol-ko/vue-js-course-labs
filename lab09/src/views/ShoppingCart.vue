@@ -36,7 +36,6 @@
 </template>
 
 <script>
-  import Vue from 'vue';
   import axios from 'axios';
   import ShoppingCartItem from '@/components/ShoppingCartItem';
 
@@ -75,7 +74,7 @@
     },
     methods: {
       removeFromShoppingList(ingredientTitle) {
-        Vue.delete(this.$root.shoppingCartItems, ingredientTitle);
+        this.$delete(this.$root.shoppingCartItems, ingredientTitle);
       }
     },
     watch: {
