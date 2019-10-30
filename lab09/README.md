@@ -4,7 +4,7 @@
 1. In your IDE, open the `src` folder and explore the code. 
 1. Let's take a closer look at the `SimilarCocktails` component.
 This component is responsible for fetching the similar cocktails via an API,
-but to make an API call we need a currecnt `cocktailId`, which is passed through as a prop.
+but to make an API call we need a current `cocktailId`, which is passed through as a prop.
 Note how we only perform an API call, when component is `mounted`.
 
     <details>

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-  import axois from 'axios';
+  import axios from 'axios';
   import CocktailList from '@/components/CocktailList';
 
   export default {
@@ -30,7 +30,7 @@
       async loadSimilarCocktails() {
         let response;
         try {
-          response = await axois.get(`https://anca22974l.execute-api.eu-central-1.amazonaws.com/dev/cocktails/${this.cocktailId}/similar`);
+          response = await axios.get(`https://anca22974l.execute-api.eu-central-1.amazonaws.com/dev/cocktails/${this.cocktailId}/similar`);
           this.similarCocktails = response.data.slice(0, 3);
         } catch (error) {
           this.similarCocktails = undefined;
