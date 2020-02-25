@@ -2,14 +2,12 @@
 
 1. Run `yarn && yarn serve` inside this folder. Open the website and see the application with three sections - Recipes, Favorites and Shopping cart. 
 1. In your IDE, open the `src` folder and explore the code. Our application has components now and is a bit more organized.
-1. Now that we have individual ingredients in our shopping cart, let's display the total amount.
+1. Now that we have individual ingredients in our shopping cart, let's display the total amount using a computed property.
 In a template of a `ShoppingCart.vue` component display a total amount in CHF. Mind that ingredients have quantity!
-Not sure how to find the sum in one line of code? Not a big deal! Ask your neighbour for some [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) advice :)
 
     <details>
-    <summary>No helpful neighbours around?</summary>
+    <summary>Not sure how to calculate the sum? Here's a little JavaScript reminder:</summary>
     
-    A little Javascript reminder!    
     `items` is an object, which in our case has a structure like
     
     ```js
@@ -30,37 +28,20 @@ Not sure how to find the sum in one line of code? Not a big deal! Ask your neigh
     - iterate through all the values of this object
     - multiply price by quantity and sum the results up.
     
-    We could of course write a classic loop, but this kind of code will not work in an template.
+    With a classic loop it may look like this:
     
-    To do such things in one line, we can use the [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) method.
-    And to get all values of an object as an array, we can use [Object.values() function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values)   
-    
-    Isn't functional programming just lovely?
-    </details>    
-
-    <details>
-    <summary>Hint</summary>
-    
-    ```vue
-    <template>
-      <section>
-        <h1>Shopping cart</h1>
-        <ul>
-          <li v-for="(data, title) in items">
-            {{title}} CHF {{data.price}}
-            Qty: {{data.quantity}}
-          </li>
-        </ul>
-        <p>
-          Total: CHF {{Object.values(this.items).reduce((sum, item) => (sum + item.price * item.quantity), 0)}}
-        </p>
-      </section>
-    </template>
+    ```js
+        let totalPrice = 0;
+        this.items.forEach(item => {
+          totalPrice += item.price * item.quantity;
+        })
     ```
-    </details>
-
-1. Even if you are that Javascript-savvy neighbour, such statements don't look pretty in templates.
-Even worse if you have to use the result value several times! Let's extract this code into a computed property.
+    
+    Or in a more functional way using [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) and [Object.values()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values) function:
+    
+    ```js
+        Object.values(this.items).reduce((sum, item) => (sum + item.price * item.quantity), 0)
+    ```
 
     <details>
     <summary>Hint</summary>
@@ -96,7 +77,7 @@ Even worse if you have to use the result value several times! Let's extract this
     ```
     </details>
 
-1. Much better! Now that we know how to declare computed properties, let's add a few more.
+1. Now that we know how to declare computed properties, let's add a few more.
 Our liquor retail partner puts a delivery price of CHF 12 on all the orders that amount to less than CHF 100.
 Let's adjust our template to display a shopping cart subtotal, delivery price and a total amount to pay.
 It should look like this:
@@ -151,8 +132,8 @@ It should look like this:
     
 1. Oh snap, a new requirement has arrived.
 Our partner liquor store has launched a promo campaign - users that sign up for their newsletter get a one-time promo code for a 10% discount for their next order.
-We even get provided an API, that tells us whether the promo code is valid.
-All that's left to do is to adjust our application.   
+We even get an API, that tells us whether the promo code user has entered is valid.
+All that's left is to adjust our application.   
 Add the following code to the `ShoppingCart.vue` component:
 
     Into the `<template>` section:
@@ -178,9 +159,9 @@ Add the following code to the `ShoppingCart.vue` component:
     }
     ```
     
-    Now we have a field for the users to enter a promo code. 
+    Now we have an input field for the users to enter a promo code. 
     
-1. Now let's call the API. Our app has `axios` library pre-installed, which you can import like: 
+1. Let's call the API. Our app has `axios` library pre-installed, which you can import like: 
 
     ```js
     import axios from 'axios';
@@ -193,9 +174,9 @@ Add the following code to the `ShoppingCart.vue` component:
     const isValid = response.data;
     ```
 
-    Now our partners have told us, that all the valid codes would be 10 symbols long.
-    So our task is to make an *asynchronous* call to the API as soon as the user enters something long enough into the input field.
-    If the promo code is correct, let's apply the discount to the total.
+    According to our partners promo codes are never shorter than 10 symbols.
+    So our task is to make an *asynchronous* call to an API as soon as the user enters something long enough into the input field.
+    If a promo code is correct, let's apply a discount to the total.
     
     <details>
     <summary>BTW, the correct promo code is...</summary>
